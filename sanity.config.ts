@@ -8,13 +8,10 @@ const devOnlyPlugins = [getStartedPlugin()]
 
 export default defineConfig({
   name: 'default',
-  title: 'pink-lemur',
-
+  title: 'tulsi-backend',
   projectId: '3zeldxq2',
   dataset: 'production',
-
   plugins: [deskTool(), visionTool(), ...(isDev ? devOnlyPlugins : [])],
-
   schema: {
     types: schemaTypes,
   },
